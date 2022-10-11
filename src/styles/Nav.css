@@ -1,0 +1,160 @@
+nav {
+    position: fixed;
+    top: 0;
+    height: 5rem;
+    z-index: 1111111;
+    transition: all 0.4s;
+    width: 100%;
+}
+
+.nav {
+    background-color: transparent;
+    background-image: linear-gradient(
+        180deg,
+        var(--transparent-black) 10%,
+        transparent
+    );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    height: 4.5rem;
+    padding: 0 3.75rem;
+}
+
+.nav-black {
+    background-color: var(--black);
+}
+
+.nav-logo {
+    margin-right: 1.5rem;
+    object-fit: contain;
+    width: 6.5rem;
+}
+
+.nav-avatar {
+    width: 30px;
+    object-fit: contain; /*keeps aspect ratio*/
+}
+
+.left-nav {
+    display: flex;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.primary-nav-ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.primary-nav-ul > li {
+    margin-left: 1.2rem;
+}
+
+nav a {
+    color: var(--white);
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 400ms;
+}
+
+.left-nav a:hover {
+    color: var(--link-white);
+}
+
+.right-nav > div {
+    margin-left: 1.3rem;
+}
+
+.search-box {
+    display: flex;
+}
+
+.search-box img {
+    align-self: center;
+    margin-left: 0.5rem;
+    width: 1.3rem;
+}
+
+img.close {
+    margin-right: 0.5rem;
+    width: 1rem;
+}
+
+.search-input {
+    background-color: var(--black);
+    border: 1px solid var(--white);
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: -1.8rem;
+    overflow-x: hidden;
+    transition: all 200ms;
+    height: 2rem;
+    width: 10rem;
+}
+
+.search-input-animate {
+    width: 18rem;
+}
+
+.icon-and-input {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+    font-family: inherit;
+    font-size: 0.875rem;
+    margin-left: 1rem;
+}
+
+input::placeholder {
+    color: rgb(183, 183, 183);
+}
+
+input:focus {
+    outline: none;
+}
+
+.bell {
+    position: relative;
+    cursor: pointer;
+}
+
+.notification > img {
+    width: 1.5rem;
+}
+
+.avatar {
+    transition: transform 600ms;
+}
+
+.avatar:hover {
+    transform: rotate(180deg);
+}
+
+.avatar > img {
+    border-radius: 0.25rem;
+}
+
+a.active {
+    font-weight: 600;
+}
+
+.display-none {
+    display: none;
+}
+
+.visibility {
+    visibility: hidden;
+}

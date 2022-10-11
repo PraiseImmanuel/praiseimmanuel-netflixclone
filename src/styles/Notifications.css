@@ -1,0 +1,51 @@
+.notifications-full-container {
+    position: absolute;
+    top: 1.8rem;
+    right: 0;
+}
+
+.empty {
+    height: 1rem;
+    width: 2rem;
+}
+
+.notifications-container {
+    color: #fff;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20rem;
+    overflow-y: scroll;
+}
+
+.bell:hover .notifications-container {
+    display: flex;
+}
+
+.notification-item:first-child {
+    border-top: 0.2rem solid rgb(206, 206, 206);
+}
+
+.notification-item {
+    background-color: rgba(0, 0, 0, 0.904);
+    border: 1px solid rgb(206, 206, 206);
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: 25rem;
+}
+
+.notification-image > img {
+    border-radius: 0.5rem;
+    margin-right: 1.5rem;
+    width: 8rem;
+}
+
+p.date {
+    color: rgb(177, 175, 175);
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}

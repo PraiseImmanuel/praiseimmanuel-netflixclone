@@ -1,0 +1,24 @@
+:root {
+    --transparent-black: rgba(0, 0, 0, 0.7);
+    --black: #141414;
+    --white: #fff;
+    --light-grey: rgb(247, 243, 243);
+    --link-white: #c0c0c0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    background-color: var(--black);
+    font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
